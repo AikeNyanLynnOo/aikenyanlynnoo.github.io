@@ -86,7 +86,7 @@ body {
   height: 100vh;
   position: relative;
   background: #fff url("../images/freelancer.png") no-repeat right center fixed;
-  background-size: contain;
+  background-size: 700px;
 }
 .header-gp {
   position: absolute;
@@ -128,6 +128,7 @@ body {
 /* about area start  */
 .about-me {
   padding: 20px;
+  margin-top: 3em;
 }
 .about-text {
   text-align: justify;
@@ -143,6 +144,7 @@ body {
 /* skills area start  */
 .skills {
   padding: 20px;
+  margin-top: 3em;
 }
 .frontend,
 .backend {
@@ -185,6 +187,7 @@ body {
 /* experience area start */
 .experience {
   padding: 20px;
+  margin-top: 3em;
 }
 .experiences {
   list-style-type: none;
@@ -218,6 +221,7 @@ body {
 /* contact area start*/
 .contact {
   padding: 20px;
+  margin-top: 3em;
 }
 .row {
   display: flex;
