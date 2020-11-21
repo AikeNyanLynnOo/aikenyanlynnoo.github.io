@@ -189,7 +189,7 @@ body {
 }
 .progress {
   display: block;
-  width: 5%;
+  width: 50%;
   height: 9px;
   margin: 0;
   background-color: #6c63ff;
