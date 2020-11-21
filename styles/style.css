@@ -284,6 +284,17 @@ body {
 }
 /* contact area end */
 
+/* footer start */
+
+.footer {
+  text-align: center;
+  line-height: 4em;
+  background-color: #6c63ff;
+  color: #fff;
+}
+
+/* footer end */
+
 @media screen and (max-width: 800px) {
   .row {
     display: block;
