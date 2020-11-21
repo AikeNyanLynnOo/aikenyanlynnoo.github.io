@@ -340,6 +340,9 @@ body {
     display: block;
     margin-right: 20px;
   }
+  .social-nav a, .social-nav-right a{
+    text-decoration: none;
+  }
   .nav-left {
     padding: 0;
     position: relative;
