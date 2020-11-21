@@ -8,3 +8,12 @@ document.querySelector("#menu-bar").addEventListener("click", () => {
   document.getElementById("side-bar").style.animationDuration = 0.3 + "s";
   document.getElementById("side-bar").style.animationFillMode = "forwards";
 });
+
+document.querySelector(".content").onclick = () => {
+  var style = document.getElementById("side-bar").style;
+  if (style.animationName === "slide-in") {
+    document.getElementById("side-bar").style.animationName = "slide-out";
+  }
+  document.getElementById("side-bar").style.animationDuration = 0.3 + "s";
+  document.getElementById("side-bar").style.animationFillMode = "forwards";
+};
