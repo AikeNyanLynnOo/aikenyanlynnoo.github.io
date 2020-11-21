@@ -18,13 +18,15 @@
     <link rel="stylesheet" href="styles/style.css" />
   </head>
   <body>
-    <div class="side-bar">
-      <img src="images/pp.png" alt="Profile" class="profile-img" />
-      <span class="name">Aike Nyan Lynn Oo</span>
+    <div id="side-bar" class="side-bar">
+      <div class="profile-gp">
+        <img src="images/pp.png" alt="Profile" class="profile-img" />
+        <span class="name">Aike Nyan Lynn Oo</span>
+      </div>
       <hr class="name-underline" />
       <ul class="nav-bar">
         <li class="nav"><a href="#home">Home</a></li>
-        <li class="nav"><a href="#about_me">About me</a></li>
+        <li class="nav"><a href="#about_me">About</a></li>
         <li class="nav"><a href="#skills">Skills</a></li>
         <li class="nav"><a href="#experience">Experience</a></li>
         <li class="nav"><a href="#contact">Contact!</a></li>
@@ -45,6 +47,28 @@
         ></a>
       </div>
     </div>
+    <div class="nav-secondary">
+      <div class="nav-left">
+        <i id="menu-bar" class="menu-bar fa fa-bars"></i>
+        <span>Welcome!</span>
+      </div>
+      <div class="social-nav-right">
+        <a href="facebook.com"
+          ><i class="social-icon fab fa-facebook-square"></i
+        ></a>
+        <a href="twitter.com"
+          ><i class="social-icon fab fa-twitter-square"></i
+        ></a>
+        <a href="linkedin.com"><i class="social-icon fab fa-linkedin"></i></a>
+        <a href="instagram.com"
+          ><i class="social-icon fab fa-instagram-square"></i
+        ></a>
+        <a href="github.com"
+          ><i class="social-icon fab fa-github-square"></i
+        ></a>
+      </div>
+    </div>
+
     <div class="content">
       <section id="home" class="home">
         <div class="header-gp">
@@ -183,5 +207,6 @@
         </div>
       </section>
     </div>
+    <script src="scripts/app.js"></script>
   </body>
 </html>
