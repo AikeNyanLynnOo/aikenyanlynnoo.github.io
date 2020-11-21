@@ -263,6 +263,7 @@ body {
 }
 .contact-form textarea {
   resize: none;
+  padding: 0.5em;
 }
 
 .contact-form input:focus,
@@ -301,8 +302,8 @@ body {
   .contact {
     padding-top: 5em;
   }
-  .social-icon{
-  	margin : 0;
+  .social-icon {
+    margin: 0;
   }
 }
 @media screen and (max-width: 650px) {
@@ -340,7 +341,8 @@ body {
     display: block;
     margin-right: 20px;
   }
-  .social-nav a, .social-nav-right a{
+  .social-nav a,
+  .social-nav-right a {
     text-decoration: none;
   }
   .nav-left {
@@ -350,8 +352,8 @@ body {
   .menu-bar {
     margin: 0 20px;
   }
-  .social-icon{
-  	margin : 0;
+  .social-icon {
+    margin: 0;
   }
 }
 @keyframes slide-in {
@@ -387,8 +389,8 @@ body {
     -o-transform: translate(-100%, 0);
   }
 }
-@media screen and (max-width: 500px){
-	.social-icon{
-  	margin : 0;
+@media screen and (max-width: 500px) {
+  .social-icon {
+    margin: 0;
   }
 }
