@@ -52,32 +52,135 @@
           <span class="header-sub">I'm a junior web developer!</span>
           <button class="btn-primary">Download CV!</button>
         </div>
-        <img src="images/freelancer.png" alt="Freelancer" class="home-img" />
+        <!-- <img src="images/freelancer.png" alt="Freelancer" class="home-img" /> -->
       </section>
       <section id="about_me" class="about-me">
         <h1 class="header">About Me!</h1>
         <hr class="header-underline" />
+        <ul class="about-text">
+          <li>
+            I'm a final year student from
+            <span class="hightlight-text"
+              >University of Information Technology</span
+            >
+            Yangon.
+          </li>
+          <li>
+            Majoring in Software Engineering, I am really enthusiastic to
+            develop software systems and manage software systems. I have
+            concentrations in learning programming languages, operating systems,
+            web technologies and DBMS.
+          </li>
+          <li>
+            I like -
+            <span class="hightlight-text"
+              >singing, reading, and badmintion.</span
+            >
+          </li>
+        </ul>
       </section>
       <section id="skills" class="skills">
         <h1 class="header">Skills</h1>
         <hr class="header-underline" />
+        <ul class="frontend">
+          <li class="skill">
+            HTML/CSS/Javascript
+            <div class="progress-bar">
+              <span id="html-css-js" class="progress"></span>
+            </div>
+          </li>
+          <li class="skill">
+            VueJS
+            <div class="progress-bar">
+              <span id="vue-js" class="progress"></span>
+            </div>
+          </li>
+          <li class="skill">
+            ReactJS
+            <div class="progress-bar">
+              <span id="react-js" class="progress"></span>
+            </div>
+          </li>
+        </ul>
+        <ul class="backend">
+          <li class="skill">
+            NodeJS
+            <div class="progress-bar">
+              <span id="node-js" class="progress"></span>
+            </div>
+          </li>
+          <li class="skill">
+            PHP
+            <div class="progress-bar">
+              <span id="php" class="progress"></span>
+            </div>
+          </li>
+          <li class="skill">
+            C#/Asp.NET
+            <div class="progress-bar">
+              <span id="c#-asp" class="progress"></span>
+            </div>
+          </li>
+        </ul>
       </section>
       <section id="experience" class="experience">
         <h1 class="header">Experience</h1>
         <hr class="header-underline" />
+        <ul class="experiences">
+          <li class="exp">
+            <h2 class="position">Field Study(Web Development)</h2>
+            <span
+              ><i class="fa fa-location-arrow"></i
+              ><a href="#" class="company">Ahtar Oo Co.,Ltd</a></span
+            >
+            <span class="exp-date"
+              ><i class="fa fa-calendar-alt"></i>2019 (October)</span
+            >
+            <p class="exp-text">
+              Take training and responsible as a junior web developer using PHP
+              and Asp.NET framework.
+            </p>
+          </li>
+          <li class="exp">
+            <h2 class="position">Internship (Junior web developer)</h2>
+            <span
+              ><i class="fa fa-location-arrow"></i
+              ><a href="#" class="company"
+                >JKT Myanmar International Co.,Ltd</a
+              ></span
+            >
+            <span class="exp-date"
+              ><i class="fa fa-calendar-alt"></i>2020(June) -2020 (August)</span
+            >
+            <p class="exp-text">
+              Take training and responsible for developing the whole website
+              (job recruitment portal) using React (especially NextJS) and
+              Google Firestore database. And also deploying using Docker and
+              Google Cloud Run.
+            </p>
+          </li>
+        </ul>
       </section>
       <section id="contact" class="contact">
         <h1 class="header">Get In Touch!</h1>
         <hr class="header-underline" />
-        <form action="#" class="contact-form">
-          <input type="text" name="name" id="name" placeholder="Name" />
-          <input type="email" name="email" id="email" placeholder="Email" />
-          <textarea name="message" id="message" cols="15" rows="10">
-Message</textarea
-          >
-          <input type="submit" value="Send" class="btn-primary"/>
-        </form>
-        <img src="images/contact.png" alt="Contact" class="contact-img" />
+        <div class="row">
+          <form action="#" class="contact-form">
+            <input type="text" name="name" id="name" placeholder="Name" />
+            <input type="email" name="email" id="email" placeholder="Email" />
+            <textarea name="message" id="message" cols="15" rows="10">
+  Message</textarea
+            >
+            <input type="submit" value="Send" class="btn-primary" />
+          </form>
+          <ul class="contact-info">
+            <li><i class="fa fa-mobile-alt"></i> 09979373184</li>
+            <li>
+              <i class="fa fa-envelope-square"></i> aikenyanlinoo@uit.edu.mm
+            </li>
+            <li><i class="fa fa-home"></i> Yangon</li>
+          </ul>
+        </div>
       </section>
     </div>
   </body>
