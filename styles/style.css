@@ -105,7 +105,7 @@ body {
   top: 0;
 }
 .home {
-  height: 100vh;
+  height: 95vh;
   position: relative;
   background: #fff url("../images/freelancer.png") no-repeat right center fixed;
   background-size: 700px;
