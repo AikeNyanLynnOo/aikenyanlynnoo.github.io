@@ -317,7 +317,8 @@ body {
 
 .btn-link {
   display : block;
-  padding: 1em 2em;
+  width : 45%;
+  padding : 1em;
   text-decoration: none;
   background-color: #fff;
   border: 1px solid #6c63ff;
