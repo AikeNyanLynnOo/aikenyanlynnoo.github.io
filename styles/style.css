@@ -200,22 +200,22 @@ body {
   -o-border-radius: 5px;
 }
 
-.progress[id="html-css-js"]{
+.progress[id="html-css-js"] {
   width: 70%;
 }
-.progress[id="bootstrap"]{
+.progress[id="bootstrap"] {
   width: 65%;
 }
-.progress[id="vue-js"]{
+.progress[id="vue-js"] {
   width: 40%;
 }
-.progress[id="react-js"]{
+.progress[id="react-js"] {
   width: 70%;
 }
-.progress[id="node-js"]{
+.progress[id="node-js"] {
   width: 60%;
 }
-.progress[id="php"]{
+.progress[id="php"] {
   width: 50%;
 }
 
@@ -316,9 +316,9 @@ body {
 /* footer end */
 
 .btn-link {
-  display : block;
-  width : 45%;
-  padding : 1em;
+  display: block;
+  width: 45%;
+  padding: 1em;
   text-decoration: none;
   background-color: #fff;
   border: 1px solid #6c63ff;
