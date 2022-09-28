@@ -71,7 +71,9 @@
         <div class="header-gp">
           <h1 class="header">Welcome to my page!</h1>
           <span class="header-sub">I'm a junior web developer!</span>
-            <a href="https://shorturl.at/cpuX5" class="btn-link" target="_blank">View Resume!</a>
+          <a href="https://shorturl.at/cpuX5" class="btn-link" target="_blank"
+            >View Resume!</a
+          >
         </div>
         <!-- <img src="images/freelancer.png" alt="Freelancer" class="home-img" /> -->
       </section>
@@ -111,9 +113,15 @@
             </div>
           </li>
           <li class="skill">
-            Bootstrap 
+            Bootstrap
             <div class="progress-bar">
               <span id="bootstrap" class="progress"></span>
+            </div>
+          </li>
+          <li class="skill">
+            TailwindCSS
+            <div class="progress-bar">
+              <span id="tailwind" class="progress"></span>
             </div>
           </li>
           <li class="skill">
@@ -149,11 +157,68 @@
             </div>
           </li> -->
         </ul>
+        <ul class="others">
+          <li class="skill">
+            MongoDB
+            <div class="progress-bar">
+              <span id="mongodb" class="progress"></span>
+            </div>
+          </li>
+          <li class="skill">
+            MySql
+            <div class="progress-bar">
+              <span id="mysql" class="progress"></span>
+            </div>
+          </li>
+        </ul>
       </section>
       <section id="experience" class="experience">
-        <h1 class="header">Experience</h1>
+        <h1 class="header">Work Experience</h1>
         <hr class="header-underline" />
         <ul class="experiences">
+          <li class="exp">
+            <h2 class="position">Frontend Developer</h2>
+            <span
+              ><i class="fa fa-location-arrow"></i
+              ><a href="#" class="company">Freelance</a></span
+            >
+            <span class="exp-date"
+              ><i class="fa fa-calendar-alt"></i>Present</span
+            >
+            <p class="exp-text">React, Bootstrap, Thailand, REST API</p>
+          </li>
+
+          <li class="exp">
+            <h2 class="position">API Developer</h2>
+            <span
+              ><i class="fa fa-location-arrow"></i
+              ><a href="#" class="company">Freelance</a></span
+            >
+            <span class="exp-date"
+              ><i class="fa fa-calendar-alt"></i>Present</span
+            >
+            <p class="exp-text">MongoDB (Mongoose), NodeJS (Express)</p>
+          </li>
+
+          <li class="exp">
+            <h2 class="position">FullStack Web Developer</h2>
+            <span
+              ><i class="fa fa-location-arrow"></i
+              ><a href="#" class="company"
+                >JKT Myanmar International Co.,Ltd</a
+              ></span
+            >
+            <span class="exp-date"
+              ><i class="fa fa-calendar-alt"></i>2020(June) - Present</span
+            >
+            <p class="exp-text">
+              Take training and responsible for developing the whole website
+              (job recruitment portal) using React (especially NextJS) and
+              Google Firestore database. And also deploying using Docker and
+              Google Cloud Run.
+            </p>
+          </li>
+
           <li class="exp">
             <h2 class="position">Field Study(Web Development)</h2>
             <span
@@ -170,26 +235,113 @@
               and Asp.NET framework.
             </p>
           </li>
+        </ul>
+      </section>
+
+      <section id="experience" class="experience">
+        <h1 class="header">Project Experience</h1>
+        <hr class="header-underline" />
+        <ul class="experiences">
           <li class="exp">
-            <h2 class="position">Internship (Junior web developer)</h2>
+            <h2 class="position">JKT Myanmar International Business Website</h2>
             <span
               ><i class="fa fa-location-arrow"></i
-              ><a href="#" class="company"
-                >JKT Myanmar International Co.,Ltd</a
+              ><a
+                href="http://jktmyanmarint.com/"
+                class="company"
+                target="_blank"
+                >JKT Myanmar International</a
               ></span
             >
             <span class="exp-date"
-              ><i class="fa fa-calendar-alt"></i>2020(June) -2020 (August)</span
+              ><i class="fa fa-calendar-alt"></i>07/2021-08/2021</span
             >
             <p class="exp-text">
-              Take training and responsible for developing the whole website
-              (job recruitment portal) using React (especially NextJS) and
-              Google Firestore database. And also deploying using Docker and
-              Google Cloud Run.
+              A business home page for my company using (Vanilla JS & PHP for
+              Backend).
+            </p>
+          </li>
+
+          <li class="exp">
+            <h2 class="position">
+              HR Management System (Internal system for company)
+            </h2>
+            <span
+              ><i class="fa fa-location-arrow"></i
+              ><a href="#" class="company">Freelance</a></span
+            >
+            <span class="exp-date"
+              ><i class="fa fa-calendar-alt"></i>08/2021</span
+            >
+            <p class="exp-text">
+              Visualizing HR data and calculating KPI for internal use for JKT
+              Myanmar.
+            </p>
+            <p class="exp-text">
+              Technologies -> React,TailwindCSS, AmCharts, Express API, & GCP
+            </p>
+          </li>
+
+          <li class="exp">
+            <h2 class="position">URL Shortener</h2>
+            <span
+              ><i class="fa fa-location-arrow"></i
+              ><a href="https://url-shortener-a1k3.netlify.app/" class="company"
+                >URL Shortener</a
+              ></span
+            >
+            <span class="exp-date"
+              ><i class="fa fa-calendar-alt"></i>06/2021</span
+            >
+            <p class="exp-text">
+              Shortening URLs using React, Tailwind CSS & ShrtCode
+            </p>
+          </li>
+
+          <li class="exp">
+            <h2 class="position">IP Address / Domain Tracker</h2>
+            <span
+              ><i class="fa fa-location-arrow"></i
+              ><a href="https://ip-tracker-a1k3.netlify.app/" class="company"
+                >IP Address / Domain Tracker</a
+              ></span
+            >
+            <span class="exp-date"
+              ><i class="fa fa-calendar-alt"></i>07/2021</span
+            >
+            <p class="exp-text">Tracking location of server</p>
+            <p class="exp-text">
+              Locating in Map when the user input IP address or Domain address.
+            </p>
+            <p class="exp-text">
+              Technologies -> React, Netlify functions, Geo IPify
+            </p>
+          </li>
+
+          <li class="exp">
+            <h2 class="position">RESTful Countries API with React</h2>
+            <span
+              ><i class="fa fa-location-arrow"></i
+              ><a href="https://ip-tracker-a1k3.netlify.app/" class="company"
+                >Browse all countries</a
+              ></span
+            >
+            <span class="exp-date"
+              ><i class="fa fa-calendar-alt"></i>08/2021</span
+            >
+            <p class="exp-text">
+              Search with country name (full name or part of)
+            </p>
+            <p class="exp-text">Filter with regions</p>
+            <p class="exp-text">Light/Dark mode switcher</p>
+            <p class="exp-text">Responsiveness</p>
+            <p class="exp-text">
+              Technologies -> React, TailwindCSS, REST countries
             </p>
           </li>
         </ul>
       </section>
+
       <section id="contact" class="contact">
         <h1 class="header">Get In Touch!</h1>
         <hr class="header-underline" />

@@ -170,7 +170,8 @@ body {
   padding-top: 3em;
 }
 .frontend,
-.backend {
+.backend,
+.others {
   margin: 2em 1em;
 }
 .skill {
@@ -206,6 +207,9 @@ body {
 .progress[id="bootstrap"] {
   width: 65%;
 }
+.progress[id="tailwind"] {
+  width: 70%;
+}
 .progress[id="vue-js"] {
   width: 40%;
 }
@@ -217,6 +221,12 @@ body {
 }
 .progress[id="php"] {
   width: 50%;
+}
+.progress[id="mongodb"] {
+  width: 70%;
+}
+.progress[id="mysql"] {
+  width: 60%;
 }
 
 /* skills area end */
