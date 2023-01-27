@@ -17,3 +17,17 @@ document.querySelector(".content").onclick = () => {
   document.getElementById("side-bar").style.animationDuration = 0.3 + "s";
   document.getElementById("side-bar").style.animationFillMode = "forwards";
 };
+
+const year = document.getElementById("footer-year");
+const date = new Date();
+year.textContent = date.getFullYear();
+
+var typed5 = new TypeIt("#header-sub", {
+  strings: ["Frontend Developer", "FullStack Web Developer"],
+  typeSpeed: 0,
+  backSpeed: 0,
+  cursorChar: "&nbsp;|",
+  shuffle: true,
+  smartBackspace: false,
+  loop: true,
+}).go();

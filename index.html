@@ -21,7 +21,12 @@
   <body>
     <div id="side-bar" class="side-bar">
       <div class="profile-gp">
-        <img src="images/pp.png" alt="Profile" class="profile-img" />
+        <img
+          src="images/pp.png"
+          alt="Profile"
+          class="profile-img"
+          width="100"
+        />
         <span class="name">Aike Nyan Lynn Oo</span>
       </div>
       <hr class="name-underline" />
@@ -69,9 +74,12 @@
     <div class="content">
       <section id="home" class="home">
         <div class="header-gp">
-          <h1 class="header">Welcome to my page!</h1>
-          <span class="header-sub">I'm a FullStack Web Developer!</span>
-          <a href="./cvs/AikeNyanLynnOo_frontend.pdf" class="btn-link" download
+          <h1 class="header">Welcome! &nbsp; I'm a</h1>
+          <span class="header-sub" id="header-sub"></span>
+          <a
+            href="./cvs/Aike_Nyan Lynn Oo_Resume_Frontend.pdf"
+            class="btn-link"
+            download
             >View Resume!</a
           >
         </div>
@@ -83,21 +91,25 @@
         <ul class="about-text">
           <li>
             I'm a final year student from
-            <span class="hightlight-text"
-              >University of Information Technology</span
-            >
+            <a href="https://www.uit.edu.mm/" class="hightlight-text"
+              >University of Information Technology
+              <i class="fa fa-location-arrow"></i
+            ></a>
             Yangon.
           </li>
           <li>
-            Majoring in Software Engineering, I am really enthusiastic to
-            develop software systems and manage software systems. I have
-            concentrations in learning programming languages, operating systems,
-            web technologies and DBMS.
+            Majoring in Software Engineering at University of Information
+            Technology Myanmar, I am really enthusiastic to develop software
+            systems and manage software systems. I have developed various web
+            applications using React, Vue and CSS technologies. I'am also good
+            at building and using REST APIs and currently learning GraphQL. I
+            also have experience of developing REST APIs using NodeJS and
+            MongoDB.
           </li>
           <li>
-            I like -
+            I prefer to do -
             <span class="hightlight-text"
-              >singing, reading, and badmintion.</span
+              >singing, table tennis, and badmintion.</span
             >
           </li>
         </ul>
@@ -131,15 +143,45 @@
             </div>
           </li>
           <li class="skill">
-            ReactJS
+            ReactJS (Redux, Redux thunk, Context)
             <div class="progress-bar">
               <span id="react-js" class="progress"></span>
+            </div>
+          </li>
+          <li class="skill">
+            NextJS
+            <div class="progress-bar">
+              <span id="next-js" class="progress"></span>
+            </div>
+          </li>
+          <li class="skill">
+            Typescript
+            <div class="progress-bar">
+              <span id="typescript" class="progress"></span>
+            </div>
+          </li>
+          <li class="skill">
+            Figma
+            <div class="progress-bar">
+              <span id="figma" class="progress"></span>
+            </div>
+          </li>
+          <li class="skill">
+            Framer Motion
+            <div class="progress-bar">
+              <span id="framer-motion" class="progress"></span>
+            </div>
+          </li>
+          <li class="skill">
+            Greensock (GSAP)
+            <div class="progress-bar">
+              <span id="greensock" class="progress"></span>
             </div>
           </li>
         </ul>
         <ul class="backend">
           <li class="skill">
-            NodeJS
+            NodeJS (Express)
             <div class="progress-bar">
               <span id="node-js" class="progress"></span>
             </div>
@@ -150,12 +192,12 @@
               <span id="php" class="progress"></span>
             </div>
           </li>
-          <!-- <li class="skill">
-            C#/Asp.NET
+          <li class="skill">
+            REST API (JQuery, Node-fetch, Axios, GraphQL)
             <div class="progress-bar">
-              <span id="c#-asp" class="progress"></span>
+              <span id="rest-api" class="progress"></span>
             </div>
-          </li> -->
+          </li>
         </ul>
         <ul class="others">
           <li class="skill">
@@ -168,6 +210,24 @@
             MySql
             <div class="progress-bar">
               <span id="mysql" class="progress"></span>
+            </div>
+          </li>
+          <li class="skill">
+            BigQuery
+            <div class="progress-bar">
+              <span id="bigquery" class="progress"></span>
+            </div>
+          </li>
+          <li class="skill">
+            Google Cloud Platform (GCP)
+            <div class="progress-bar">
+              <span id="gcp" class="progress"></span>
+            </div>
+          </li>
+          <li class="skill">
+            Docker
+            <div class="progress-bar">
+              <span id="docker" class="progress"></span>
             </div>
           </li>
         </ul>
@@ -185,7 +245,9 @@
             <span class="exp-date"
               ><i class="fa fa-calendar-alt"></i>Present</span
             >
-            <p class="exp-text">React, Bootstrap, Thailand, REST API</p>
+            <p class="exp-text">
+              React, Bootstrap, TailwindCSS, Framer Motion, REST API
+            </p>
           </li>
 
           <li class="exp">
@@ -197,25 +259,27 @@
             <span class="exp-date"
               ><i class="fa fa-calendar-alt"></i>Present</span
             >
-            <p class="exp-text">MongoDB (Mongoose), NodeJS (Express)</p>
+            <p class="exp-text">
+              NodeJS (ExpressJS, MongoDB, JWT Authentication, Account
+              Registeration, Account Authentication)
+            </p>
           </li>
 
           <li class="exp">
             <h2 class="position">FullStack Web Developer</h2>
             <span
               ><i class="fa fa-location-arrow"></i
-              ><a href="#" class="company"
-                >JKT Myanmar International Co.,Ltd</a
+              ><a href="https://official.haj.co.jp/" class="company"
+                >HAJ Co.,Ltd.</a
               ></span
             >
             <span class="exp-date"
               ><i class="fa fa-calendar-alt"></i>2020(June) - Present</span
             >
             <p class="exp-text">
-              Take training and responsible for developing the whole website
-              (job recruitment portal) using React (especially NextJS) and
-              Google Firestore database. And also deploying using Docker and
-              Google Cloud Run.
+              Take training and responsible for developing the web applications
+              using React, NodeJS, Docker and Google Cloud Platform (Cloud
+              Technologies - Cloud Run, BigQuery, App Engine, etc)
             </p>
           </li>
 
@@ -232,7 +296,7 @@
             >
             <p class="exp-text">
               Take training and responsible as a junior web developer using PHP
-              and Asp.NET framework.
+              and VueJS
             </p>
           </li>
         </ul>
@@ -242,6 +306,43 @@
         <h1 class="header">Project Experience</h1>
         <hr class="header-underline" />
         <ul class="experiences">
+          <li class="exp">
+            <h2 class="position">Discord Website Clone</h2>
+            <span
+              ><i class="fa fa-location-arrow"></i
+              ><a
+                href="https://discord-site-clone-a1k3.netlify.app/"
+                class="company"
+                target="_blank"
+                >View</a
+              ></span
+            >
+            <span
+              ><i class="fab fa-github"></i
+              ><a
+                href="https://github.com/AikeNyanLynnOo/discord-clone-next"
+                class="repository"
+                target="_blank"
+                >Repository</a
+              ></span
+            >
+            <span class="exp-date"
+              ><i class="fa fa-calendar-alt"></i>12/2022 – 01/2023</span
+            >
+            <dl class="exp-text">
+              <dd>Frontend Clone project of Discord business website</dd>
+              <dd>
+                Include all navigation and animations almost the same as
+                original Discord Website at the development time
+              </dd>
+              <dd>Developed Responsive Design for all devices</dd>
+              <dd>Smooth animation as the original website</dd>
+            </dl>
+            <p class="exp-text">
+              Technologies -> •ReactJS (NextJS) •Typescript •TailwindCSS •Framer
+              Motion (for animations)
+            </p>
+          </li>
           <li class="exp">
             <h2 class="position">JKT Myanmar International Business Website</h2>
             <span
@@ -256,29 +357,12 @@
             <span class="exp-date"
               ><i class="fa fa-calendar-alt"></i>07/2021-08/2021</span
             >
+            <dl class="exp-text">
+              <dd>A business website for my company</dd>
+              <dd>Able to apply jobs over the website</dd>
+            </dl>
             <p class="exp-text">
-              A business home page for my company using (Vanilla JS & PHP for
-              Backend).
-            </p>
-          </li>
-
-          <li class="exp">
-            <h2 class="position">
-              HR Management System (Internal system for company)
-            </h2>
-            <span
-              ><i class="fa fa-location-arrow"></i
-              ><a href="#" class="company">Freelance</a></span
-            >
-            <span class="exp-date"
-              ><i class="fa fa-calendar-alt"></i>08/2021</span
-            >
-            <p class="exp-text">
-              Visualizing HR data and calculating KPI for internal use for JKT
-              Myanmar.
-            </p>
-            <p class="exp-text">
-              Technologies -> React,TailwindCSS, AmCharts, Express API, & GCP
+              Technologies -> •Vanilla JS •Bootstrap •JQuery •PHP
             </p>
           </li>
 
@@ -290,11 +374,31 @@
                 >URL Shortener</a
               ></span
             >
+            <span
+              ><i class="fab fa-github"></i
+              ><a
+                href="https://github.com/AikeNyanLynnOo/url-shortener-react-api"
+                class="repository"
+                target="_blank"
+                >Repository</a
+              ></span
+            >
             <span class="exp-date"
               ><i class="fa fa-calendar-alt"></i>06/2021</span
             >
+            <dl class="exp-text">
+              <dd>Shortening URLs using React, Tailwind CSS & ShrtCo API</dd>
+              <dd>
+                Store recent shortened links when user back to app using Browser
+                Storage
+              </dd>
+            </dl>
             <p class="exp-text">
-              Shortening URLs using React, Tailwind CSS & ShrtCode
+              Technologies -> •ReactJS •TailwindCSS •Axios •<a
+                href="https://shrtco.de/docs"
+                >ShrtCode API</a
+              >
+              <i class="fa fa-location-arrow"></i>
             </p>
           </li>
 
@@ -306,15 +410,30 @@
                 >IP Address / Domain Tracker</a
               ></span
             >
+            <span
+              ><i class="fab fa-github"></i
+              ><a
+                href="https://github.com/AikeNyanLynnOo/ip-tracker"
+                class="repository"
+                target="_blank"
+                >Repository</a
+              ></span
+            >
             <span class="exp-date"
               ><i class="fa fa-calendar-alt"></i>07/2021</span
             >
-            <p class="exp-text">Tracking location of server</p>
+            <dl class="exp-text">
+              <dd>Tracking location of server</dd>
+              <dd>
+                Locating in Map when the user input IP address or Domain address
+              </dd>
+            </dl>
             <p class="exp-text">
-              Locating in Map when the user input IP address or Domain address.
-            </p>
-            <p class="exp-text">
-              Technologies -> React, Netlify functions, Geo IPify
+              Technologies -> •ReactJS •Netlify functions •<a
+                href="https://geo.ipify.org/"
+                >Geo IPify</a
+              >
+              <i class="fa fa-location-arrow"></i>
             </p>
           </li>
 
@@ -322,21 +441,36 @@
             <h2 class="position">RESTful Countries API with React</h2>
             <span
               ><i class="fa fa-location-arrow"></i
-              ><a href="https://ip-tracker-a1k3.netlify.app/" class="company"
+              ><a
+                href="https://main--rest-countries-browser-a1k3.netlify.app/"
+                class="company"
                 >Browse all countries</a
+              ></span
+            >
+            <span
+              ><i class="fab fa-github"></i
+              ><a
+                href="https://github.com/AikeNyanLynnOo/rest-countries-api-theme-switcher"
+                class="repository"
+                target="_blank"
+                >Repository</a
               ></span
             >
             <span class="exp-date"
               ><i class="fa fa-calendar-alt"></i>08/2021</span
             >
+            <dl class="exp-text">
+              <dd>Search with country name (full name or part of name)</dd>
+              <dd>Filter with continents</dd>
+              <dd>Light/Dark theme switcher</dd>
+              <dd>Responsive design</dd>
+            </dl>
             <p class="exp-text">
-              Search with country name (full name or part of)
-            </p>
-            <p class="exp-text">Filter with regions</p>
-            <p class="exp-text">Light/Dark mode switcher</p>
-            <p class="exp-text">Responsiveness</p>
-            <p class="exp-text">
-              Technologies -> React, TailwindCSS, REST countries
+              Technologies -> •ReactJS •TailwindCSS •Axios •Redux •<a
+                href="https://restcountries.com/"
+                >REST Countries</a
+              >
+              <i class="fa fa-location-arrow"></i>
             </p>
           </li>
         </ul>
@@ -355,16 +489,19 @@
             <input type="submit" value="Send" class="btn-primary" />
           </form>
           <ul class="contact-info">
-            <li><i class="fa fa-mobile-alt"></i> 09979373184</li>
+            <li><i class="fa fa-mobile-alt"></i> +959979373184</li>
             <li>
               <i class="fa fa-envelope-square"></i> aikenyanlynnoo.uit@gmail.com
             </li>
-            <li><i class="fa fa-home"></i> Shwedaung, Bago Region</li>
+            <li><i class="fa fa-home"></i> Yangon, Myanmar</li>
           </ul>
         </div>
       </section>
-      <footer class="footer">2020-Nov</footer>
+      <footer class="footer">
+        Implemented by Aike Nyan Lynn Oo @<span id="footer-year"></span>
+      </footer>
     </div>
+    <script src="https://unpkg.com/typeit@8.7.1/dist/index.umd.js"></script>
     <script src="scripts/app.js"></script>
   </body>
 </html>

@@ -11,6 +11,25 @@ html {
 body {
   position: relative;
 }
+
+.fa {
+  font-size: small;
+}
+
+.profile-img {
+  display: block;
+  width: 160px;
+  height: 160px;
+  object-fit: cover;
+  margin: 0 auto;
+  border:0.5px solid rgba(255, 255, 255, 0.6);
+  border-radius: 50%;
+  -webkit-border-radius: 50%;
+  -moz-border-radius: 50%;
+  -ms-border-radius: 50%;
+  -o-border-radius: 50%;
+}
+
 .side-bar {
   height: 100vh;
   width: 250px;
@@ -111,17 +130,20 @@ body {
   background-size: 700px;
 }
 .header-gp {
+  padding: 0 1em;
   position: absolute;
   top: 50%;
   left: 5%;
   transform: translate(0, -50%);
 }
-.header {
-  font-size: 35px;
+.header-gp > * {
+  margin: 40px 0;
 }
-.header-gp * {
-  margin: 35px;
+.header-sub {
+  font-size: 45px;
+  font-weight: bold;
 }
+
 .btn-primary {
   display: block;
   padding: 1em 2em;
@@ -155,13 +177,20 @@ body {
 }
 .about-text {
   text-align: justify;
-  line-height: 1.5em;
-  margin: 2em 1em;
+  line-height: 1.8em;
+  margin: 2em 0;
+  list-style-type: none;
+}
+.about-text li {
+  margin: 1em 0;
 }
 .hightlight-text {
   color: #6c63ff;
   font-weight: bold;
+  text-decoration: none;
+  margin: 0 4px;
 }
+
 /* about area end */
 
 /* skills area start  */
@@ -172,14 +201,25 @@ body {
 .frontend,
 .backend,
 .others {
-  margin: 2em 1em;
+  margin: 2.5em 1em;
 }
 .skill {
   margin: 1em 0;
+  cursor: pointer;
+}
+.skill:hover {
+  font-weight: bold;
+}
+.skill:hover .progress-bar {
+  height: 7px;
+  border: 1px solid rgba(0, 0, 0, 0.2);
+}
+.skill:hover .progress {
+  height: 6px;
 }
 .progress-bar {
   width: 20%;
-  height: 10px;
+  height: 4px;
   background-color: #fff;
   border: 0.5px solid rgba(0, 0, 0, 0.1);
   border-radius: 5px;
@@ -188,10 +228,15 @@ body {
   -moz-border-radius: 5px;
   -ms-border-radius: 5px;
   -o-border-radius: 5px;
+  transition: all 0.3s;
+  -webkit-transition: all 0.3s;
+  -moz-transition: all 0.3s;
+  -ms-transition: all 0.3s;
+  -o-transition: all 0.3s;
 }
 .progress {
   display: block;
-  height: 9px;
+  height: 3px;
   margin: 0;
   background-color: #6c63ff;
   border-radius: 5px;
@@ -199,34 +244,71 @@ body {
   -moz-border-radius: 5px;
   -ms-border-radius: 5px;
   -o-border-radius: 5px;
+  transition: all 0.3s;
+  -webkit-transition: all 0.3s;
+  -moz-transition: all 0.3s;
+  -ms-transition: all 0.3s;
+  -o-transition: all 0.3s;
 }
 
+/* frontend skill styles */
 .progress[id="html-css-js"] {
   width: 70%;
 }
 .progress[id="bootstrap"] {
-  width: 65%;
+  width: 85%;
 }
 .progress[id="tailwind"] {
-  width: 70%;
+  width: 85%;
 }
 .progress[id="vue-js"] {
   width: 40%;
 }
 .progress[id="react-js"] {
-  width: 70%;
+  width: 80%;
 }
-.progress[id="node-js"] {
+.progress[id="next-js"] {
+  width: 75%;
+}
+.progress[id="typescript"] {
+  width: 75%;
+}
+.progress[id="figma"] {
   width: 60%;
 }
-.progress[id="php"] {
-  width: 50%;
+.progress[id="framer-motion"] {
+  width: 60%;
 }
+.progress[id="greensock"] {
+  width: 40%;
+}
+
+/* backend skill styles */
+.progress[id="node-js"] {
+  width: 85%;
+}
+.progress[id="php"] {
+  width: 60%;
+}
+.progress[id="rest-api"] {
+  width: 70%;
+}
+
+/* other skill styles */
 .progress[id="mongodb"] {
   width: 70%;
 }
 .progress[id="mysql"] {
   width: 60%;
+}
+.progress[id="bigquery"] {
+  width: 80%;
+}
+.progress[id="gcp"] {
+  width: 70%;
+}
+.progress[id="docker"] {
+  width: 70%;
 }
 
 /* skills area end */
@@ -246,18 +328,25 @@ body {
 .exp * {
   margin: 0.5em 0;
 }
+.exp > span {
+  margin-right: 1em;
+}
 .position {
   font-size: large;
 }
 .company {
   text-decoration: none;
   color: #6c63ff;
+  font-weight: bold;
 }
-.exp-date {
-  margin: 0 1em;
+.repository {
+  text-decoration: none;
+  color: #6c63ff;
+  font-weight: bold;
 }
 .exp-text {
-  line-height: 1.5em;
+  margin: 1.3em 0;
+  line-height: 1.7em;
   text-align: justify;
 }
 .exp i {
@@ -319,15 +408,17 @@ body {
 .footer {
   text-align: center;
   line-height: 4em;
-  background-color: #6c63ff;
-  color: #fff;
+  /* background-color: #6c63ff; */
+  /* color: #fff; */
+  color: #6c63ff;
+  font-weight: bold;
 }
 
 /* footer end */
 
 .btn-link {
   display: block;
-  width: 45%;
+  width: 180px;
   padding: 1em;
   text-decoration: none;
   background-color: #fff;
@@ -345,7 +436,10 @@ body {
     background-size: 400px;
   }
   .header-gp {
-    top: 30%;
+    top: 45%;
+  }
+  .header-sub {
+    font-size: 35px;
   }
 
   .about-me,
@@ -383,6 +477,7 @@ body {
   .profile-img {
     display: block;
     width: 100px;
+    height: 100px;
     margin: 0 auto;
   }
 
@@ -403,9 +498,14 @@ body {
   }
   .menu-bar {
     margin: 0 20px;
+    cursor: pointer;
+    font-size: larger;
   }
   .social-icon {
     margin: 0;
+  }
+  .header-sub {
+    font-size: 30px;
   }
 }
 @keyframes slide-in {
@@ -444,5 +544,8 @@ body {
 @media screen and (max-width: 500px) {
   .social-icon {
     margin: 0;
+  }
+  .header-sub {
+    font-size: 25px;
   }
 }
