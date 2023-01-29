@@ -172,7 +172,8 @@ body {
 
 /* about area start  */
 .about-me {
-  padding: 20px;
+  width : 87%;
+  margin : 0 auto;
   padding-top: 3em;
 }
 .about-text {
@@ -195,7 +196,8 @@ body {
 
 /* skills area start  */
 .skills {
-  padding: 20px;
+  width : 87%;
+  margin : 0 auto;
   padding-top: 3em;
 }
 .frontend,
@@ -315,7 +317,8 @@ body {
 
 /* experience area start */
 .experience {
-  padding: 20px;
+  width : 87%;
+  margin : 0 auto;
   padding-top: 3em;
 }
 .experiences {
@@ -356,7 +359,8 @@ body {
 
 /* contact area start*/
 .contact {
-  padding: 20px;
+  width : 87%;
+  margin : 0 auto;
   padding-top: 3em;
 }
 .row {
